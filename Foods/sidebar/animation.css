@@ -1,0 +1,152 @@
+@import url('https://fonts.cdnfont.com/css/ics-rubrik-black');
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .slider{
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    top: 10%;
+    left: calc(50% - 20px);
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    animation: autoRun 20s linear infinite ;
+    z-index: 2;
+}
+
+@keyframes autoRun{
+    from{
+        transform: perspective(1000px) rotateX(-17deg) rotateY(0deg);
+    }to{
+        transform: perspective(1000px) rotateX(-17deg) rotateY(360deg);
+    }
+}
+
+.banner .slider .item{
+    position: absolute;
+    inset: 0 0 0 0;
+    transform:
+    rotateY(calc( (var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+    translateZ(500px);
+}
+
+.banner .slider .item .img{
+    width: 150%;
+    height: 150%;
+    object-fit: cover;
+}
+
+.banner .content{
+    position: absolute;
+    bottom: 0;
+    left: 53%;
+    transform: translateX(-50%);
+    width: min(1000px, 240vw);
+    height: max-content;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner .content h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 8em;
+    line-height: 2em;
+    color: rgb(7, 33, 56); 
+    position: relative; 
+}
+
+.banner .content .modul{
+    background-image: url(./chef.png);
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-size: auto 105%;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+@media (max-width: 708px) {
+    .banner .slider {
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        transform: translateX(-50%) perspective(500px);
+        animation: autoRunMobile 15s linear infinite;
+        margin-top: 50px;
+    }
+
+    @keyframes autoRunMobile {
+        from {
+            transform: translateX(-50%) perspective(500px) rotateX(-10deg) rotateY(0deg);
+        }
+        to {
+            transform: translateX(-50%) perspective(500px) rotateX(-10deg) rotateY(360deg);
+        }
+    }
+
+    .banner .slider .item {
+        transform: 
+            rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(200px);
+    }
+
+    .banner .slider .item .img {
+        width: 1%;
+        height: 1%;
+        max-width: 8px;
+        max-height: 8px;
+    }
+
+    .banner .content {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+    }
+
+    .banner .content h1 {
+        font-size: 2.5em;
+        line-height: 1.2em;
+    }
+
+    .banner .content .modul {
+        background-size: contain;
+        background-position: center bottom;
+    }
+}
+
+/* Дополнительная адаптация для очень маленьких экранов */
+@media (max-width: 100px) {
+    .banner .slider {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .banner .slider .item .img {
+        max-width: 6px;
+        max-height: 6px;
+    }
+    
+    .banner .content h1 {
+        font-size: 2em;
+    }
+    
+    .banner .content .modul {
+        height: 30vh;
+    }
+}
+
+
+
