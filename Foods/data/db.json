@@ -1,0 +1,468 @@
+{
+  "menu_list": [
+    {
+      "id": "1",
+      "menu_name": "Salad"
+    },
+    {
+      "id": "2",
+      "menu_name": "Rolls"
+    },
+    {
+      "id": "3",
+      "menu_name": "Deserts"
+    },
+    {
+      "id": "4",
+      "menu_name": "Sandwich"
+    },
+    {
+      "id": "caf1",
+      "menu_name": "Pure Veg"
+    },
+    {
+      "id": "c1ac",
+      "menu_name": "Pasta"
+    },
+    {
+      "id": "4a6a",
+      "menu_name": "Noodles"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "bauyrzhan",
+      "email": "bauyrzhan@narxoz.kz",
+      "password": "$2b$12$pkVBqqGJ6MY9MOFvJxys1.ICRvvXjMyvS.8XzGI.v4j2LAw.9OSbu",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "serzhan",
+      "email": "serzhan@narxoz.kz",
+      "password": "$2b$12$TOzJlw8qFF.gLuReNtJ5Z.zE.liWBJMdOACGZzwwX1XijvF3h5b0q",
+      "role": "manager"
+    },
+    {
+      "id": "3f9d",
+      "name": "dima",
+      "email": "dima@narxoz.kz",
+      "password": "$2b$12$TZG1klKo1S2OA/SEWJtRAeWYST/eamriVM.ddsJCECSjRmT.ct8rm",
+      "role": "user"
+    },
+    {
+      "id": "5a82",
+      "name": "Rasul",
+      "email": "rasul@narxoz.kz",
+      "password": "$2b$12$1sRQWvLroOYFWlRhkJbTy.niqHM6MUGJqbgZIv3FoAxD9XdE.p4cW",
+      "role": "user"
+    },
+    {
+      "id": "9542",
+      "name": "Ayaulym",
+      "email": "ayaulym@narxoz.kz",
+      "password": "$2b$12$xLKkkN4knE59KQCt0Hq6VuK5wuXz3mMo9Uk1qwYPQUAF6kEdDyvcu",
+      "role": "user"
+    },
+    {
+      "id": "8a11",
+      "name": "Nurbol",
+      "email": "nurbol@narxoz.kz",
+      "password": "$2b$12$aKQKDthm6gObkM54KGVkL.LmdqfjIka7hkdY.WOwyOYUqtS8wZ7ze",
+      "role": "user"
+    },
+    {
+      "id": "e4d1",
+      "name": "Aruzhan",
+      "email": "aruzhan@narxoz.kz",
+      "password": "$2b$12$fvRg7tL/R.7CkqYvREIWCuaBXvB/Ls9BWm8dmODcQFB4HT4FP.eb.",
+      "role": "user"
+    },
+    {
+      "id": "e5c4",
+      "name": "Rauan",
+      "email": "rauan@narxoz.kz",
+      "password": "$2b$12$6Rx9IuscAeQvuHxTfzWk8.FUfBh4uUy1MEYOOKYENrLOMZHbzEn5i",
+      "role": "manager"
+    },
+    {
+      "id": "6489",
+      "name": "Aza",
+      "email": "aza@narxoz.kz",
+      "password": "$2b$12$GQL67FrsNf0c7bC7g3A5aue92Y1uWz7382/ORDE1jkglqQmUm9G.K",
+      "role": "user"
+    }
+  ],
+  "orders": [
+    {
+      "id": "eae7",
+      "userId": "3f9d",
+      "userName": "dima",
+      "items": [
+        {
+          "id": "67d7fa207339e5978094e1a7",
+          "name": "Ripple Ice Cream",
+          "price": 14,
+          "quantity": 3
+        },
+        {
+          "id": "67d7fdaf7339e5978094e1b1",
+          "name": "Fruit Ice Cream",
+          "price": 22,
+          "quantity": 2
+        },
+        {
+          "id": "67d7febd7339e5978094e1b6",
+          "name": "Grilled Sandwich",
+          "price": 16,
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 118,
+      "status": "In Progress",
+      "createdAt": "2025-04-11T09:53:18.499Z"
+    },
+    {
+      "id": "b651",
+      "userId": "5a82",
+      "userName": "Rasul",
+      "items": [
+        {
+          "id": "67d7f7ba7339e5978094e19d",
+          "name": "Veg salad",
+          "price": 18,
+          "quantity": 2
+        },
+        {
+          "id": "67d801807339e5978094e1c8",
+          "name": "Veg Noodles",
+          "price": 12,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 48,
+      "status": "Accepted",
+      "createdAt": "2025-04-18T09:54:18.373Z"
+    },
+    {
+      "id": "751e",
+      "userId": "9542",
+      "userName": "Ayaulym",
+      "items": [
+        {
+          "id": "67d7f9b07339e5978094e1a3",
+          "name": "Lasagna Rolls",
+          "price": 14,
+          "quantity": 2
+        },
+        {
+          "id": "67d7fcb87339e5978094e1b0",
+          "name": "Veg Rolls",
+          "price": 15,
+          "quantity": 2
+        },
+        {
+          "id": "67d7fe787339e5978094e1b4",
+          "name": "Chicken Sandwich",
+          "price": 12,
+          "quantity": 1
+        },
+        {
+          "id": "67d7fe967339e5978094e1b5",
+          "name": "Vegan Sandwich",
+          "price": 18,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 88,
+      "status": "In Progress",
+      "createdAt": "2025-04-01T09:57:50.607Z"
+    },
+    {
+      "id": "94c1",
+      "userId": "3f9d",
+      "userName": "dima",
+      "items": [
+        {
+          "id": "67d7fdff7339e5978094e1b2",
+          "name": "Jar Ice Cream",
+          "price": 10,
+          "quantity": 1
+        },
+        {
+          "id": "67d801007339e5978094e1c5",
+          "name": "Creamy Pasta",
+          "price": 16,
+          "quantity": 2
+        },
+        {
+          "id": "67d801807339e5978094e1c8",
+          "name": "Veg Noodles",
+          "price": 12,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 54,
+      "status": "Delivered",
+      "createdAt": "2025-04-22T12:49:12.799Z"
+    },
+    {
+      "id": "90e9",
+      "userId": "8a11",
+      "userName": "Nurbol",
+      "items": [
+        {
+          "id": "67d7f9977339e5978094e1a2",
+          "name": "Chicken Salad",
+          "price": 24,
+          "quantity": 1
+        },
+        {
+          "id": "67d7f9b07339e5978094e1a3",
+          "name": "Lasagna Rolls",
+          "price": 14,
+          "quantity": 1
+        },
+        {
+          "id": "67d7fa207339e5978094e1a7",
+          "name": "Ripple Ice Cream",
+          "price": 14,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 52,
+      "status": "In Progress",
+      "createdAt": "2025-04-25T06:53:54.498Z"
+    },
+    {
+      "id": "ff24",
+      "userId": "c105",
+      "userName": "Rauan",
+      "items": [
+        {
+          "id": "67d7f7ba7339e5978094e19d",
+          "name": "Veg salad",
+          "price": 18,
+          "quantity": 2
+        },
+        {
+          "id": "67d7f9707339e5978094e1a0",
+          "name": "Clover Salad",
+          "price": 16,
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 68,
+      "status": "Delivered",
+      "createdAt": "2025-04-29T08:38:34.720Z"
+    },
+    {
+      "id": "72f2",
+      "userId": "3f9d",
+      "userName": "dima",
+      "items": [
+        {
+          "id": "67d7f7ba7339e5978094e19d",
+          "name": "Veg salad",
+          "price": 18,
+          "quantity": 4
+        },
+        {
+          "id": "67d7f9707339e5978094e1a0",
+          "name": "Clover Salad",
+          "price": 16,
+          "quantity": 1
+        },
+        {
+          "id": "67d7f9977339e5978094e1a2",
+          "name": "Chicken Salad",
+          "price": 24,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 112,
+      "status": "Delivered",
+      "createdAt": "2025-05-02T05:20:18.054Z"
+    },
+    {
+      "id": "ab84",
+      "userId": "6489",
+      "userName": "Aza",
+      "items": [
+        {
+          "id": "67d7fbc67339e5978094e1af",
+          "name": "Chicken Rolls",
+          "price": 20,
+          "quantity": 1
+        },
+        {
+          "id": "67d800e37339e5978094e1c4",
+          "name": "Tomato Pasta",
+          "price": 18,
+          "quantity": 2
+        }
+      ],
+      "totalAmount": 56,
+      "status": "Delivered",
+      "createdAt": "2025-05-02T06:11:21.130Z"
+    },
+    {
+      "id": "9376",
+      "userId": "1",
+      "userName": "bauyrzhan",
+      "items": [
+        {
+          "id": "67d7f9977339e5978094e1a2",
+          "name": "Chicken Salad",
+          "price": 24,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 24,
+      "status": "Accepted ",
+      "createdAt": "2025-05-02T06:52:58.454Z"
+    },
+    {
+      "id": "0d87",
+      "userId": "3f9d",
+      "userName": "dima",
+      "items": [
+        {
+          "id": "67d7f9707339e5978094e1a0",
+          "name": "Clover Salad",
+          "price": 16,
+          "quantity": 1
+        },
+        {
+          "id": "67d7f9977339e5978094e1a2",
+          "name": "Chicken Salad",
+          "price": 24,
+          "quantity": 1
+        },
+        {
+          "id": "67d7f9b07339e5978094e1a3",
+          "name": "Lasagna Rolls",
+          "price": 14,
+          "quantity": 1
+        }
+      ],
+      "totalAmount": 54,
+      "status": "In Progress",
+      "createdAt": "2025-05-02T09:41:55.664Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "77b2",
+      "userId": "3f9d",
+      "foodId": "67d801807339e5978094e1c8",
+      "comment": "маған ұнады өте дәмді болған керемет",
+      "date": "2025-04-28T15:21:13.078Z"
+    },
+    {
+      "id": "6be2",
+      "userId": "5a82",
+      "userName": "Rasul",
+      "foodId": "67d7f7ba7339e5978094e19d",
+      "comment": "Food provides essential nutrients for overall",
+      "date": "2025-04-28T17:25:16.389Z"
+    },
+    {
+      "id": "29ac",
+      "userId": "5a82",
+      "userName": "Rasul",
+      "foodId": "67d7f9b07339e5978094e1a3",
+      "comment": "Food provides essential nutrients for overall",
+      "date": "2025-04-28T17:25:26.479Z"
+    },
+    {
+      "id": "e294",
+      "userId": "5a82",
+      "userName": "Rasul",
+      "foodId": "67d7fe507339e5978094e1b3",
+      "comment": "Food provides essential nutrients for overall\n",
+      "date": "2025-04-28T17:25:57.182Z"
+    },
+    {
+      "id": "c36b",
+      "userId": "3f9d",
+      "userName": "dima",
+      "foodId": "67d7f7ba7339e5978094e19d",
+      "comment": "Food provides essential nutrients for overall",
+      "date": "2025-04-28T17:26:46.820Z"
+    },
+    {
+      "id": "f09a",
+      "userId": "3f9d",
+      "userName": "dima",
+      "foodId": "67d7f9707339e5978094e1a0",
+      "comment": "Food provides essential nutrients for overall",
+      "date": "2025-04-28T17:26:55.887Z"
+    },
+    {
+      "id": "34a4",
+      "userId": "1",
+      "userName": "bauyrzhan",
+      "foodId": "67d7f9b07339e5978094e1a3",
+      "comment": "Food provides essential nutrients for overall",
+      "date": "2025-04-28T17:28:06.227Z"
+    },
+    {
+      "id": "f2fb",
+      "userId": "1",
+      "userName": "bauyrzhan",
+      "foodId": "67d7fa207339e5978094e1a7",
+      "comment": "Food provides essential nutrients for overall",
+      "date": "2025-04-28T17:28:23.715Z"
+    },
+    {
+      "id": "4468",
+      "userId": "c105",
+      "userName": "Rauan",
+      "foodId": "67d7f7ba7339e5978094e19d",
+      "comment": "Food provides essential nutrients for ",
+      "date": "2025-04-29T08:38:54.812Z"
+    },
+    {
+      "id": "fca4",
+      "userId": "e4d1",
+      "userName": "Aruzhan",
+      "foodId": "67d7f9b07339e5978094e1a3",
+      "comment": "Food provides essential nutrients for",
+      "date": "2025-04-30T16:00:40.378Z"
+    },
+    {
+      "id": "6624",
+      "userId": "1",
+      "userName": "bauyrzhan",
+      "foodId": "67d7f9707339e5978094e1a0",
+      "comment": "маған ұнамады өте ашшы екен!!! сондайақ тұрып қалаған өнімдерді пайдаланады екен \nоданша сіздерге беретін кеңесім басқа жерден тамақтаныңыздар",
+      "date": "2025-04-30T18:03:42.267Z"
+    },
+    {
+      "id": "c009",
+      "userId": "6489",
+      "userName": "Aza",
+      "foodId": "67d7f9977339e5978094e1a2",
+      "comment": "Maa tema",
+      "date": "2025-05-02T06:13:45.792Z"
+    },
+    {
+      "id": "8351",
+      "userId": "6489",
+      "userName": "Aza",
+      "foodId": "67d7f9707339e5978094e1a0",
+      "comment": "asdfghjk,ldsfghjklgeypedofil5tgtgtg",
+      "date": "2025-05-02T09:53:58.565Z"
+    },
+    {
+      "id": "03af",
+      "userId": "1",
+      "userName": "bauyrzhan",
+      "foodId": "681463b0c0255a9bf8045fd2",
+      "comment": "cdecedcedcscsd",
+      "date": "2025-05-04T09:15:04.858Z"
+    }
+  ]
+}
